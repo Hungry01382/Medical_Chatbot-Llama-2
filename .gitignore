@@ -1,0 +1,30 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environment
+venv/
+
+# Machine learning model file
+llama-2-7b-chat.ggmlv3.q8_0.bin
+
+# Backup or temporary files
+*.bak
+*.tmp
+backup/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# Chainlit-specific files
+.chainlit/
+
+# Logs and debug files
+*.log
+*.out
+*.err
+

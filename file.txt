@@ -1,0 +1,3 @@
+venv\Scripts\activate
+python ingest.py
+chainlit run model.py -w
